@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+main section h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
+  color: var(--very-light-gray);
+}
+
+main section p {
+  font-size: 12px;
+  color: var(--transparent-white);
+  margin-bottom: 3rem;
+}
+
+main section button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 2px solid var(--very-light-gray);
+  border-radius: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+main section.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+main section.sedans button {
+  color: var(--bright-orange);
+}
+
+main section.sedans button:hover, main section.sedans button:active {
+  background-color: var(--bright-orange);
+  color: white;
+}
+
+main section.suvs {
+  background-color: var(--dark-cyan);
+}
+
+main section.suvs button {
+  color: var(--dark-cyan);
+}
+
+main section.suvs button:hover, main section.suvs button:active {
+  background-color: var(--dark-cyan);
+  color: white;
+}
+
+main section.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+main section.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+main section.luxury button:hover, main section.luxury button:active {
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    margin: 5rem auto;
+    width: 375px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+  }
+  main section {
+    width: 17rem;
+  }
+  main section.sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  main section.luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
